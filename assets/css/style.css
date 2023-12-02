@@ -1,0 +1,137 @@
+.services-section {
+	background-size: cover;
+	padding: 60px 0;
+	position: relative;
+	z-index: 2; /* Set a higher z-index value */
+  }
+  
+  .inner-width {
+	width: 100%;
+	max-width: 1200px;
+	margin: auto;
+	padding: 0 20px;
+	overflow: hidden;
+	position: relative;
+	top: 100px;
+  }
+  
+  .section-title {
+	text-align: center;
+	color: black;
+	text-transform: uppercase;
+	font-size: 30px;
+	position: relative;
+	z-index: 3; /* Set an even higher z-index value */
+  }
+  
+  .border {
+	width: 160px;
+	height: 2px;
+	background: #82ccdd;
+	margin: 40px auto;
+  }
+  
+  .services-container {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+  }
+  
+  .service-box {
+	max-width: 33.33%;
+	padding: 15px;
+	text-align: center;
+	cursor: pointer;
+	position: relative;
+	z-index: 4;
+	
+  }
+  
+  .service-icon {
+	display: inline-block;
+	width: 70px;
+	height: 70px;
+	border: 3px solid orange;
+	color: black;
+	transform: rotate(45deg);
+	margin-bottom: 30px;
+	margin-top: 16px;
+	transition: 0.3s linear;
+	position: relative;
+	z-index: 5; /* Set an even higher z-index value */
+  }
+  
+  .service-icon i {
+	line-height: 70px;
+	transform: rotate(-45deg);
+	font-size: 26px;
+  }
+  
+  .service-box:hover .service-icon {
+	background: orange;
+	color: #ddd;
+  }
+  
+  .service-title,
+  .service-desc {
+	padding: 15px;
+	color: black; /* Adjust the text color */
+	border-radius: 5px;
+	position: relative;
+	z-index: 6; /* Set the highest z-index value */
+  }
+  
+  .service-title {
+	font-size: 18px;
+	text-transform: uppercase;
+	margin-bottom: 10px;
+	color: black
+  }
+  
+  .service-desc {
+	font-size: 14px;
+  }
+  .transparent2 {
+	width: 1440px;
+	height: 783px;
+	background: rgba(246, 241, 241, 0.25);
+	box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+	backdrop-filter: blur(3.7px);
+	-webkit-backdrop-filter: blur(3.7px);
+	position: fixed;
+	z-index: 1; /* Set a lower z-index value */
+  }
+  
+  .main__bg2 {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	object-position: center;
+	z-index: -1;
+  }
+  
+  /* Rest of your existing styles */
+  
+  /* Rest of your existing styles */
+  
+  @media screen and (max-width:960px) {
+	.service-box{
+	  max-width: 45%;
+	}
+  }
+  
+  @media screen and (max-width:768px) {
+	.service-box{
+	  max-width: 50%;
+	}
+  }
+  
+  @media screen and (max-width:480px) {
+	.service-box{
+	  max-width: 100%;
+	}
+  }
+  
